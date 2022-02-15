@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <title>Грум Room</title>
+    <script>
+        function Close()
+        {
+            Wind = window.open("../HTML/reg_zak.html", "registration", "width=100, heigt=2000");
+            Wind.close();1
+        }
+    </script>
+</head>
+<body>
+    <header class="header2">
+        <img class="logo2" src="../Logo/logo_groom.png">
+    </header>
+    <div class="content_reg">
+        <form  class="form_reg" action="../PHP/registr.php" method="post">
+            <input type="login" class="input_login" placeholder="ИМЯ ПИТОМЦА">
+            <input type="login" class="input_login" placeholder="ОПИСАНИЕ РАБОТ">
+            <input type="login" class="input_login" placeholder="КАТЕГОРИЯ ОБРАЩЕНИЯ">
+            <input type="login" class="input_login" placeholder="ИМЯ ЗАКАЗЧИКА">
+            <button class="button_login" type="submit" onclick="Close()">ДОБАВИТЬ</button>
+        </form>
+    </div>
+    <footer class="footer">Работа выполнена Пронько Лидией</footer>
+</body>
+</html>

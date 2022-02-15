@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <title>Грум Room</title>
+    <script>
+        function Reg()
+        {
+            window.open("HTML/registration.html", "registration", "width=100, heigt=2000");
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="Logo/logo_groom.png">
+        <div class="nav">
+            <nav class="nav_login">
+                <ul class="ul_nav_login">
+                    <li class="li_nav_login">Главная</li>
+                    <li class="li_nav_login_form">
+                        <form action="HTML/lk.html" method="post" class="form_login">
+                            <input type="login" class="input_login" placeholder="ВАШ ЛОГИН">
+                            <input type="login" class="input_login" placeholder="ВАШ ПАРОЛЬ">
+                            <button class="button_login" type="submit">ВХОД</button>
+                        </form>
+                        <button class="button_login but" type="submit" onclick="Reg()">РЕГИСТРАЦИЯ</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="content">
+        <center><h1>Наши выполненные заказы</h1></center>
+        <table class="table">
+            <tr class="tr">
+                <th class="th"><h5>ДАТА</h5></th>
+                <th class="th"><h5>ИМЯ ЖИВОТНОГО</h5></th>
+                <th class="th"><h5>ОПИСАНИЕ РАБОТ</h5></th>
+                <th class="th"><h5>КАТЕГОРИЯ</h5></th>
+                <th class="th"><h5>ФОТО</h5></th>
+                <th class="th"><h5>ИМЯ ЗАКАЗЧИКА</h5></th>
+            </tr>
+            <tr class="tr">
+                <th class="th">12.02.2022 11:20</th>
+                <th class="th">Кот Степа</th>
+                <th class="th">Моему котику надо подстричь шерсть на ушах</th>
+                <th class="th">Стрижка</th>
+                <th class="th"><img class="img" src="Media/kot1.jpg"></th>
+                <th class="th">lidia</th>
+            </tr>
+            <tr class="tr">
+                <th class="th">11.02.2022 10:20</th>
+                <th class="th">Пес Адель</th>
+                <th class="th">Подстричь</th>
+                <th class="th">Стрижка</th>
+                <th class="th"><img class="img" src="Media/pes2.jpg"></th>
+                <th class="th">anika</th>
+            </tr>
+            <tr class="tr">
+                <th class="th">10.01.2022 11:00</th>
+                <th class="th">Кролик Кроль</th>
+                <th class="th">Подстричь когти</th>
+                <th class="th">Стрижка когтей</th>
+                <th class="th"><img class="img" src="Media/krol3.jpg"></th>
+                <th class="th">alex</th>
+            </tr>
+            <tr class="tr">
+                <th class="th">10.12.2021 12:20</th>
+                <th class="th">Пес Рич</th>
+                <th class="th">Хочу дреды</th>
+                <th class="th">Укладка</th>
+                <th class="th"><img class="img" src="Media/pes4.jpg"></th>
+                <th class="th">Admin</th>
+            </tr>
+        </table>
+    </div>
+    <footer class="footer">Работа выполнена Пронько Лидией</footer>
+</body>
+</html>
