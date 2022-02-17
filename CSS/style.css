@@ -125,3 +125,9 @@ li
     left: 15em;
     top: 2em;
 }
+.label
+{
+    position: relative;
+    top: -2.5em;
+    left: 1.5em;
+}
