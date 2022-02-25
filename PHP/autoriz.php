@@ -22,17 +22,17 @@ echo "Connected successfully";
 
 
 
-$sql = 'SELECT login, pass FROM users'; //Чтение логинов, паролей из таблицы бд
+$sql = "SELECT `login`, `password` FROM `users`"; //Чтение логинов, паролей из таблицы бд
 $result = mysqli_query($conn, $sql); //Запись результата
 //$rows = mysqli_fetch_all($result, MYSQLI_ASSOC)
 
 $i = 0;
 while ($row = mysqli_fetch_array($result)) //Преобразование результата в понятный коду тип данных
 {
-    if ($name == $row['login'] && $password == $row['password'])
+    if ($name == $row[`login`] && $password == $row[`password`])
     {
-        session_start();
-        $_SESSION['login'] = $name;
+       session_start();
+        $_SESSION[`login`] = $name;
         ++$i;
     }
 }
