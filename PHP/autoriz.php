@@ -36,7 +36,7 @@ while ($row = mysqli_fetch_array($result)) //Преобразование рез
         ++$i;
     }
 }
-if ($i > 0) header("Location: ../HTML/lk.html"); 
+if ($i > 0) header("Location: HTML/lk.html"); 
 else 
 {
     header("Location: index.html");
